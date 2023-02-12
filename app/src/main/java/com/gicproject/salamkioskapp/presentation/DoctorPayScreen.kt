@@ -129,6 +129,7 @@ fun DoctorPayScreen(
                 SubmitButton(
                     {
                      //   showDialog.value = true
+                        viewModel.onEvent(MyEvent.GetPrintTicket)
                     viewModel.funcPrinterConnect()
                     },
                     "Print Ticket"
